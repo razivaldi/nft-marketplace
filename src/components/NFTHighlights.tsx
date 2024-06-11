@@ -19,7 +19,7 @@ export default function NFTHighlights() {
     }, 10000); // Change image every 10 seconds (5000 milliseconds)
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, [items.length]);
+  }, [activeIndex]);
 
 
   return (
